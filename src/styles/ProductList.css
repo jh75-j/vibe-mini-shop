@@ -1,0 +1,64 @@
+.product-list {
+  /* 위에 붙어 있는 Header(61px)에 제목이 가려지지 않게 여유를 둔다 */
+  scroll-margin-top: 61px;
+}
+
+.product-list-inner {
+  max-width: 1080px;
+  margin: 0 auto;
+  padding: 56px 16px;
+}
+
+.product-list-title {
+  margin: 0 0 24px;
+  font-size: 24px;
+  color: #222;
+}
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+.product-card {
+  border: 1px solid #e5e5e5;
+  border-radius: 12px;
+  overflow: hidden;
+  background: #fff;
+}
+
+.product-card-image {
+  aspect-ratio: 1 / 1;
+  background: #e0e0e0;
+}
+
+.product-card-body {
+  padding: 16px;
+}
+
+.product-card-name {
+  margin: 0 0 8px;
+  font-size: 16px;
+  color: #222;
+}
+
+.product-card-price {
+  margin: 0;
+  font-size: 15px;
+  font-weight: 700;
+  color: #e8590c;
+}
+
+@media (max-width: 800px) {
+  .product-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .product-grid {
+    grid-template-columns: 1fr;
+  }
+}
