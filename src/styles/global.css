@@ -1,3 +1,8 @@
+:root {
+  /* Header 전체 높이(본문 60px + 아래 선 1px). 높이를 바꿀 때는 여기만 고친다 */
+  --header-height: 61px;
+}
+
 * {
   box-sizing: border-box;
 }

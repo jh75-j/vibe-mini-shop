@@ -58,8 +58,16 @@
   color: #555;
 }
 
-/* 좁은 화면: 3단계를 세로로 */
-@media (max-width: 800px) {
+/* 좁은 화면(600px 이하): 여백을 줄이고 3단계를 세로로 */
+@media (max-width: 600px) {
+  .usage-guide-inner {
+    padding: 48px 16px;
+  }
+
+  .usage-guide-title {
+    font-size: 20px;
+  }
+
   .usage-steps {
     flex-direction: column;
     gap: 16px;

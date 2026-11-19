@@ -16,7 +16,7 @@ function HeroBanner() {
   return (
     <section className="hero">
       <div className="hero-inner">
-        <h2 className="hero-title">이번 주 새로 들어 온 상품</h2>
+        <h1 className="hero-title">이번 주 새로 들어온 상품</h1>
         <p className="hero-desc">
           작은 가게들이 정성껏 준비한 새 상품을 가장 먼저 만나 보세요.
         </p>

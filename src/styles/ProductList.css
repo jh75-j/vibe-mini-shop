@@ -1,6 +1,6 @@
 .product-list {
-  /* 위에 붙어 있는 Header(61px)에 제목이 가려지지 않게 여유를 둔다 */
-  scroll-margin-top: 61px;
+  /* 위에 붙어 있는 Header 에 제목이 가려지지 않게 여유를 둔다 */
+  scroll-margin-top: var(--header-height);
 }
 
 .product-list-inner {
@@ -39,7 +39,7 @@
 
 .product-card-name {
   margin: 0 0 8px;
-  font-size: 16px;
+  font-size: 18px;
   color: #222;
 }
 
@@ -54,6 +54,16 @@
   .product-grid {
     grid-template-columns: repeat(2, 1fr);
     gap: 16px;
+  }
+}
+
+@media (max-width: 600px) {
+  .product-list-inner {
+    padding: 48px 16px;
+  }
+
+  .product-list-title {
+    font-size: 20px;
   }
 }
 

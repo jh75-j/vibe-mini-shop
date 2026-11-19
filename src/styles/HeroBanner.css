@@ -1,11 +1,16 @@
 .hero {
+  /* 넓은 화면 높이 450px. 내용이 더 길어지면 잘리지 않게 min-height 로 둔다 */
+  min-height: 450px;
+  display: flex;
+  align-items: center;
   background: linear-gradient(135deg, #fff4e6 0%, #ffe3e3 100%);
 }
 
 .hero-inner {
+  width: 100%;
   max-width: 1080px;
   margin: 0 auto;
-  padding: 72px 16px;
+  padding: 56px 16px;
 }
 
 .hero-title {
@@ -38,6 +43,11 @@
 }
 
 @media (max-width: 600px) {
+  /* 좁은 화면 높이: 화면 높이의 65% */
+  .hero {
+    min-height: 65vh;
+  }
+
   .hero-inner {
     padding: 48px 16px;
   }

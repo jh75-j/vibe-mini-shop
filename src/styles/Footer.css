@@ -6,7 +6,7 @@
 .footer-inner {
   max-width: 1080px;
   margin: 0 auto;
-  padding: 32px 16px;
+  padding: 56px 16px;
 }
 
 .footer-name {
@@ -25,4 +25,10 @@
   margin: 16px 0 0;
   font-size: 13px;
   color: #888;
+}
+
+@media (max-width: 600px) {
+  .footer-inner {
+    padding: 48px 16px;
+  }
 }
