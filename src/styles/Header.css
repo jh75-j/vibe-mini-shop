@@ -44,22 +44,51 @@
   color: #222;
 }
 
-/* 아주 좁은 화면(320~480px): 로고와 메뉴 3개가 한 줄에 들어가도록 줄인다 */
-@media (max-width: 480px) {
-  .header-inner {
-    gap: 8px;
-  }
+/* 메뉴 아이콘(햄버거): 넓은 화면에서는 숨긴다 */
+.header-toggle {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  gap: 5px;
+  width: 40px;
+  height: 40px;
+  padding: 0 8px;
+  border: none;
+  background: none;
+  cursor: pointer;
+}
 
-  .header-logo {
-    font-size: 16px;
+.header-toggle-bar {
+  display: block;
+  height: 2px;
+  background: #222;
+}
+
+/* 좁은 화면(600px 이하): 메뉴를 아이콘으로 접고, 누르면 아래로 펼친다 */
+@media (max-width: 600px) {
+  .header-toggle {
+    display: flex;
   }
 
   .header-nav {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    flex-direction: column;
     gap: 0;
+    padding: 8px 16px;
+    background: #fff;
+    border-bottom: 1px solid #e5e5e5;
+  }
+
+  .header-nav.is-open {
+    display: flex;
   }
 
   .header-menu {
-    padding: 8px 6px;
-    font-size: 13px;
+    padding: 14px 0;
+    text-align: left;
   }
 }
