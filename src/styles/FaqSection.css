@@ -1,0 +1,50 @@
+.faq-inner {
+  max-width: 1080px;
+  margin: 0 auto;
+  padding: 56px 16px;
+}
+
+.faq-title {
+  margin: 0 0 24px;
+  font-size: 24px;
+  color: #222;
+}
+
+.faq-list {
+  border-top: 1px solid #e5e5e5;
+}
+
+.faq-item {
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.faq-question {
+  padding: 18px 0;
+  font-size: 17px;
+  font-weight: 700;
+  color: #222;
+  cursor: pointer;
+}
+
+.faq-answer {
+  margin: 0;
+  padding: 0 0 18px;
+  font-size: 15px;
+  line-height: 1.6;
+  color: #555;
+}
+
+/* 좁은 화면(600px 이하) */
+@media (max-width: 600px) {
+  .faq-inner {
+    padding: 48px 16px;
+  }
+
+  .faq-title {
+    font-size: 20px;
+  }
+
+  .faq-question {
+    font-size: 16px;
+  }
+}
